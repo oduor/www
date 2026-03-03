@@ -32,9 +32,9 @@
   --sidebar-width: 19rem;
   --heading-scale: 0.9;
 
-  --color-accent: hsl(23, 100%, 50%);
+  --color-accent: #F44485;
   --link-color: var(--color-accent);
-  --link-hover: hsl(23, 100%, 40%);
+  --link-hover: #c9246a;
   --color-body-background: #fff;
   --color-text: hsl(43, 2%, 20%);
   --color-header: hsl(43, 5%, 25%);
@@ -59,8 +59,8 @@
     'Segoe UI Symbol';
 
   @media (prefers-color-scheme: dark) {
-    --color-accent: hsl(23, 100%, 52%);
-    --link-hover: hsl(23, 100%, 44%);
+    --color-accent: #F44485;
+    --link-hover: #c9246a;
     --color-body-background: hsl(48, 40%, 5%);
     --color-text: hsl(43, 10%, 75%);
     --color-header: var(--color-text);

@@ -1,16 +1,16 @@
 {
-  "title": "Chase McCoy",
+  "title": "Batian Peak",
   "url": "https://chsmc.org",
   "language": "en",
-  "description": "Chase McCoy explores, builds, & writes about the web.",
+  "description": "Batian Peak provides the machine + expert network intelligence combo that amplifies companies' operational breadth & depth.",
   "feed": {
-    "subtitle": "Chase McCoy explores, builds, & writes about the web",
+    "subtitle": "Batian Peak — Intelligence that amplifies companies",
     "path": "/feed.xml",
     "id": "https://chsmc.org/"
   },
   "author": {
-    "name": "Chase McCoy",
-    "email": "hi@chsmc.org",
+    "name": "Batian Peak",
+    "email": "info@batianpeak.com",
     "url": "https://chsmc.org"
   }
 }

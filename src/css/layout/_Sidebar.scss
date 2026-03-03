@@ -49,6 +49,10 @@
   display: none;
   max-width: var(--sidebar-width);
   padding-right: var(--gap);
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+  grid-row: 1 / span 10;
 
   @include small {
     display: flex;
@@ -56,7 +60,7 @@
 }
 
 .Sidebar__details {
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -102,7 +106,7 @@
     display: flex;
     align-items: center;
 
-    > svg {
+    >svg {
       margin-right: 6px;
     }
   }
@@ -195,7 +199,8 @@
 }
 
 .Sidebar__years {
-  li + li:not(:last-child):after,
+
+  li+li:not(:last-child):after,
   li:first-child:after {
     content: '/';
     color: var(--color-border);

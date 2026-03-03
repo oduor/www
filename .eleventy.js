@@ -57,38 +57,38 @@ export default function (config) {
 
   config.addTemplateFormats("jsx");
   config.addExtension(["jsx"], {
-		key: "11ty.js",
-		compile: function () {
-			return async function (data) {
-				const content = await this.defaultRenderer(data);
+    key: "11ty.js",
+    compile: function () {
+      return async function (data) {
+        const content = await this.defaultRenderer(data);
         const result = await jsxToString(content)
         return result
-			};
-		},
-	});
+      };
+    },
+  });
 
   config.addNunjucksAsyncShortcode('image', imageShortcode)
 
-	config.addGlobalData('eleventyComputed.slots', function() {
-		return data => {
-			const key = data.page.url;
-			slots[key] = slots[key] || {};
-			return slots[key];
-		}
-	});
+  config.addGlobalData('eleventyComputed.slots', function () {
+    return data => {
+      const key = data.page.url;
+      slots[key] = slots[key] || {};
+      return slots[key];
+    }
+  });
 
   config.addPairedShortcode('slot', function (content, name, url) {
     if (!name) throw new Error('Missing name for {% slot %} block!');
     if (!this.page.url || !content) return
-    
-		slots[url || this.page.url][name] = content;
-		return '';
+
+    slots[url || this.page.url][name] = content;
+    return '';
   })
 
   config.addCollection('tagList', function (collection) {
     let tagSet = new Set()
     collection.getAll().forEach((item) => {
-      ;(item.data.tags || []).forEach((tag) => tagSet.add(tag))
+      ; (item.data.tags || []).forEach((tag) => tagSet.add(tag))
     })
 
     return filters.filterTagList([...tagSet])
@@ -107,11 +107,6 @@ export default function (config) {
   })
 
   config.addCollection('feed', function (collection) {
-    const highlights = collection.items[0].data.highlights.map((highlight) => {
-      highlight.type = 'highlight'
-      return highlight
-    })
-
     const posts = filters
       .filterHidden(collection.getFilteredByTag('posts'))
       .map((post) => {
@@ -119,7 +114,7 @@ export default function (config) {
         return post
       })
 
-    return [...highlights, ...posts].sort(function (a, b) {
+    return posts.sort(function (a, b) {
       return new Date(a.date) - new Date(b.date)
     })
   })
@@ -162,11 +157,10 @@ export default function (config) {
           whitespaceMode: 'inline',
         })
 
-        return `<figure>${imageMarkup}${
-          attrs.title
+        return `<figure>${imageMarkup}${attrs.title
             ? `<figcaption>${mdRender.render(attrs.title)}</figcaption>`
             : ''
-        }</figure>`
+          }</figure>`
       },
     })
 

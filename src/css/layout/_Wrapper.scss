@@ -23,12 +23,8 @@
 
   @include small {
     grid-template-columns:
-      [content-start] minmax(
-        0,
-        calc(var(--content-width) + 2 * var(--layout-padding))
-      )
-      [content-end sidebar-start] minmax(0, var(--sidebar-width))
-      [sidebar-end];
+      [content-start] minmax(0,
+        calc(var(--content-width) + 2 * var(--layout-padding))) [content-end sidebar-start] minmax(0, var(--sidebar-width)) [sidebar-end];
   }
 
   @include medium {
@@ -48,7 +44,7 @@
     padding-block: 3rem;
   }
 
-  > div {
+  >div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,8 +67,74 @@
 
 .Wrapper__main {
   grid-column: content;
+  padding-top: 2rem;
 
-  > header + .Content {
+  >header+.Content {
     padding: 1rem 0 0;
+  }
+}
+
+.CompanyIntro {
+  grid-column: content;
+  padding-inline: var(--layout-padding);
+  padding-block: 1.5rem 2rem;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-body-background);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  .CompanyIntro__tagline {
+    font-size: 2.05rem;
+    font-weight: 800;
+    color: #265CFF;
+    font-family: var(--font-header);
+  }
+
+  .CompanyIntro__more {
+    margin-top: 0.25rem;
+
+    summary {
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--color-caption);
+      font-family: var(--font-code);
+      list-style: none;
+      appearance: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:before {
+        content: '+ ';
+      }
+
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+
+    &[open] summary:before {
+      content: '− ';
+    }
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      padding-top: 0.75rem;
+
+      p {
+        font-size: 0.9rem;
+        color: var(--color-caption);
+      }
+    }
   }
 }

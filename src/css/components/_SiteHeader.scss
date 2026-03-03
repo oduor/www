@@ -9,7 +9,8 @@
     text-decoration: none;
 
     svg {
-      animation: load 1s;
+      animation: mountain-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+      transform-origin: bottom center;
     }
 
     span {
@@ -17,6 +18,19 @@
     }
   }
 }
+
+@keyframes mountain-rise {
+  from {
+    opacity: 0;
+    transform: scaleY(0.3) translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
+}
+
 
 .Breadcrumbs {
   display: flex;
@@ -26,7 +40,7 @@
   color: var(--color-caption);
   --link-color: var(--color-caption);
 
-  > * + *:before {
+  >*+*:before {
     content: '/';
     margin-inline: 6px;
     color: var(--color-border);
@@ -36,12 +50,12 @@
     text-decoration: none;
   }
 
-  > div,
-  > a {
+  >div,
+  >a {
     display: flex;
     align-items: center;
 
-    > svg {
+    >svg {
       margin-right: 6px;
     }
   }
