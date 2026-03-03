@@ -19,7 +19,7 @@ function ReplyBadge({ postTitle }) {
   const emailReplySubject = `Re: ${postTitle}`
 
   return (
-    <a href={`mailto:hello@batianpeak.com?subject=${encodeURIComponent(emailReplySubject)}`} class='reply-badge'>
+    <a href={`mailto:info@batianpeak.com?subject=${encodeURIComponent(emailReplySubject)}`} class='reply-badge'>
       <img src="/images/reply-via-email.gif" alt="Reply via email" class='pixelated invert-for-light-mode' />
     </a>
   )
