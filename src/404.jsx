@@ -17,10 +17,10 @@ export default async function ({ collections }) {
     <>
       <p>Sorry! That page doesn't seem to exist. Broken URLs aren't cool, so please <a href="mailto:hi@chsmc.org">let me know how you got here</a>. And in the mean time, you might enjoy browsing the archives below.</p>
 
-      <br/>
+      <br />
 
       <div style={{ margin: '1rem 0 0' }}>
-       <Archives postsByYear={collections.postsByYear} featuredPosts={collections.featuredPosts} />
+        <Archives postsByYear={collections.postsByYear} featuredPosts={collections.featuredPosts} />
       </div>
     </>
   )
