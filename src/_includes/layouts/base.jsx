@@ -20,12 +20,14 @@ export default async function ({
         <div>
           <h1 class='SiteHeader'>
             <a href="/">
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M0 22 L5 12 L8 16 L14 6 L18 14 L23 10 L28 22 Z" fill="var(--color-accent)" />
-              </svg>
-
-
-              <span>batian peak</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+                Batian Peak
+                <sup style={{ color: '#F44485', marginLeft: '2px', top: '-0.5em', position: 'relative' }}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                  </svg>
+                </sup>
+              </span>
             </a>
           </h1>
 
@@ -35,22 +37,32 @@ export default async function ({
         <aside class='Sidebar Sidebar--mobile'>
           <Sidebar mobile collections={collections} blogroll={blogroll} />
         </aside>
-      </header>
+      </header >
 
       {templateClass === 'home' && (
         <section class='CompanyIntro'>
           <p class='CompanyIntro__tagline'>The new business of business.</p>
           <p>
-            Research and machine + talent-dense network intelligence products for the mutual benefit of ambitious nimble teams and hidden talent.
+            Research and intelligence products for the mutual benefit of ambitious nimble teams and hidden talent.
           </p>
           <br />
-          ABOUT
+          <em>BACKGROUND</em>
           <p>
-            Our multi-domain tiger teams sherpa orgs and are a proving ground for high calibre, under-networked talent at critical inflection points. Organizations uplevel their operational DNA and hidden talent surfaces from playing repeat games with repeat players for the long term - compounding access, intel, and opportunities.
+            As 6M+ small and midsize firms change hands, the future of local economies and jobs will be defined by how nimble teams gain the scale advantages of big business — without the baggage and bureaucracy — to create value for all.
           </p>
           <p>
-            This non-transactional reciprocity compounds differentiated knowledge and data - a stubborn prerequisite for frontier tech to profitably defy intractable constraints. Nimble teams gain scale advantages, a preserve for big business. Talent gets high signal legibility to more opportunities. Rinse. Repeat.
+            Teams don’t need "expert calls", consultants, or a manager class. They need co-conspirators with domain competence to uplevel their operational DNA. This is doubly the mandatory baseline from which machine intelligence can actually compound into unfair advantages. Not into more garbage.
           </p>
+          <br />
+          <em>ABOUT US</em>
+          <p>
+            Our intelligence and curated non-transactional networks fuel high-agency operations and guide how companies capture proprietary contextual operational knowledge and data to then use frontier machine intelligence to amplify real gains.
+          </p>
+
+          <p>
+            Teams get this human-machine capability to profitably defy intractable constraints. Talent gains high-signal legibility and access to intel and opportunities they deserve.
+          </p>
+
           <br />
 
           <details class='CompanyIntro__more'>
@@ -92,6 +104,6 @@ export default async function ({
       <aside class='Sidebar Sidebar--desktop'>
         <Sidebar collections={collections} blogroll={blogroll} />
       </aside>
-    </div>
+    </div >
   )
 }
