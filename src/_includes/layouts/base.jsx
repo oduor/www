@@ -42,7 +42,7 @@ export default async function ({
       {templateClass === 'home' && (
         <section class='CompanyIntro'>
           <p class='CompanyIntro__tagline'>Intelligence on Intelligence.</p>
-          <p class='SubIntro_text'>We pioneer data, analytics and insights for the real economy to truly benefit from intelligence technologies. Less noise and more signal of possibilities requires intelligence on intelligence.
+          <p class='SubIntro_text'>Batian Peak is the pioneer in data, analytics and insights for the real economy to truly benefit from intelligence technologies. In a landscape full of noise, the signal of possibilities requires intelligence on intelligence.
           </p>
 
 
