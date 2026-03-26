@@ -41,27 +41,10 @@ export default async function ({
 
       {templateClass === 'home' && (
         <section class='CompanyIntro'>
-          <p class='CompanyIntro__tagline'>The new business of business.</p>
-          <p>
-            Research and intelligence products for the mutual benefit of ambitious nimble teams and hidden talent.
-          </p>
-          <br />
-          <em>BACKGROUND</em>
-          <p>
-            As 6M+ small and midsize firms change hands, the future of local economies and jobs will be defined by how nimble teams gain the scale advantages of big business — without the baggage and bureaucracy — to create value for all.
-          </p>
-          <p>
-            Teams don’t need "expert calls", consultants, or a manager class. They need co-conspirators with domain competence to uplevel their operational DNA. This is doubly the mandatory baseline from which machine intelligence can actually compound into unfair advantages. Not into more garbage.
-          </p>
-          <br />
-          <em>ABOUT US</em>
-          <p>
-            Our intelligence and curated non-transactional networks fuel high-agency operations and guide how companies capture proprietary contextual operational knowledge and data to then use frontier machine intelligence to amplify real gains.
+          <p class='CompanyIntro__tagline'>Intelligence on Intelligence.</p>
+          <p class='SubIntro_text'>We pioneer data, analytics and insights for the real economy to truly benefit from intelligence technologies. Less noise and more signal of possibilities requires intelligence on intelligence.
           </p>
 
-          <p>
-            Teams get this human-machine capability to profitably defy intractable constraints. Talent gains high-signal legibility and access to intel and opportunities they deserve.
-          </p>
 
           <br />
 

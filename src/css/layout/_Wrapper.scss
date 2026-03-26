@@ -91,8 +91,8 @@
   }
 
   .CompanyIntro__tagline {
-    font-size: 2.05rem;
-    font-weight: 800;
+    font-size: 3.25rem;
+    font-weight: 600;
     color: #265CFF;
     font-family: var(--font-header);
   }
@@ -137,4 +137,11 @@
       }
     }
   }
+}
+
+.SubIntro_text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #265CFF;
+  font-family: var(--font-header);
 }
