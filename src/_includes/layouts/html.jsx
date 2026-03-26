@@ -52,6 +52,22 @@ export default async function ({
               font-style: normal;
               font-display: swap;
             }
+
+            @font-face {
+              font-family: 'Goodman';
+              src: url("/fonts/goodman/Goodman-VF.woff2") format('woff2');
+              font-weight: 100 900;
+              font-style: normal;
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: 'Goodman';
+              src: url("/fonts/goodman/Goodman-ItalicVF.woff2") format('woff2');
+              font-weight: 100 900;
+              font-style: italic;
+              font-display: swap;
+            }
           ` }}
           </style>
           
