@@ -41,8 +41,8 @@ export default async function ({
 
       {templateClass === 'home' && (
         <section class='CompanyIntro'>
-          <p class='CompanyIntro__tagline'>Intelligent Capital Legibility for Small Business Assets</p>
-          <p class='SubIntro_text'>Batian Peak is the pioneer in data, analytics and insights for how the real economy can truly benefit from intelligence technologies. In noise, the signal of possibilities requires intelligence on intelligence.
+          <p class='CompanyIntro__tagline'>Intelligent Capital & Growth Legibility for Small Business Assets</p>
+          <p class='SubIntro_text'>Pre-to-post transition partnership with next-gen small business owners to level up their operational DNA, unlock capital legibility, and access context and machine intelligence resources to grow in ways that defy scale constraints - sans the organizational bloat.
           </p>
 
 
