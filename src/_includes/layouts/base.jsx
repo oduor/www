@@ -41,7 +41,7 @@ export default async function ({
 
       {templateClass === 'home' && (
         <section class='CompanyIntro'>
-          <p class='CompanyIntro__tagline'>Intelligent capital + growth legibility for acquiring and building next-gen small business assets.</p>
+          <p class='CompanyIntro__tagline'>Capital legibility intelligence for acquiring and growing next-gen small business assets.</p>
           <p class='SubIntro_text'>Pre-to-post transition partnership with next-gen small business owners to level up their operational DNA, unlock capital legibility, and access context and machine intelligence resources to grow in ways that defy scale constraints - sans the organizational bloat.
           </p>
 
