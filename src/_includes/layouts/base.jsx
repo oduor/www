@@ -51,21 +51,7 @@ export default async function ({
           <details class='CompanyIntro__more'>
             <summary>Read more about our thesis...</summary>
             <div>
-              <p>Despite tech advancements, we lack a surefire way to separate the talent density + machine intelligence dynamic that compounds previously unattainable capabilities for experts, investors, and their companies — from the noise & mimicry that doesn’t. </p>
-
-              <p>Business operations are a tapestry of domains. So, tech should expand access to and utility of expertise ecosystems to augment how we audit, stress test, and uplevel operations. This provides a confident basis to underwrite frontier tech to defy operational constraints and gain scale advantages.  </p>
-
-              <p>But tech has leaned towards scaling transactional access. Not facilitating compounding from reciprocity and generosity. Pay-to-play platforms for ghost jobs, one-size-fits-none insights, and faux access dominate. So you have start-sputter-stop company and talent improvements, not the full arc of a company’s growth or breadth of talent inflections, which compound advantages. </p>
-
-              <p>Small differences in ability, when run through powerful amplifiers, produce enormous differences in outcomes. Technology reveals inequality that was always latent, waiting for the right context to matter. And frontier tech will reveal operational DNA differentiation. </p>
-
-              <p>The paradigm focuses on machine intelligence replacing labor. That’s incomplete. </p>
-
-              <p>A company with shaky operations will send them on wild goose chases to find the right lever to pull at the right time. But with no access to helpful domain expertise, embracing frontier tech won’t help them transcend bandwidth constraints to scale great economics on limited resources. Tech in an incoherent operational context amplifies chaos. </p>
-
-              <p>Companies should wonder how differentiated their operational DNA is to truly win with frontier tech. This means that access becomes reciprocal. It is no longer whether talent has access to the right room. But whether the room also has access to the right talent to buttress their work. </p>
-
-              <p>The right “right room” matters.</p>
+              <p>There's $5T+ in small business assets that need to transition in the next decade. There's not enough competent and thorough financial services to cater to the unique needs of each business - be it QoE, Valuation, Accounting or Strategic Finance. We are an intelligence-native CFO service company that helps businesseses and entreprenuers in the acquisition and transition processes. All at the speed of trust. </p>
 
             </div>
           </details>
