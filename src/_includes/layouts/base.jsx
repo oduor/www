@@ -41,7 +41,7 @@ export default async function ({
 
       {templateClass === 'home' && (
         <section class='CompanyIntro'>
-          <p class='CompanyIntro__tagline'>Intelligent Capital Legibility for Acquiring and Growing Next-gen Small Business Assets.</p>
+          <p class='CompanyIntro__tagline'>Intelligent Capital Legibility for Acquiring Small Business Assets to Build Next-Gen Companies.</p>
           <p class='SubIntro_text'>Pre-to-post transition financial services for small business ownership transitions to unlock capital legibility
           </p>
 
