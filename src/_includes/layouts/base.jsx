@@ -57,6 +57,7 @@ export default async function ({
               <p>Brian Oduor, President <br />
               <a href="https://www.linkedin.com/in/brianoduor/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
               <br />
+              <br />
               
               <p>Our Accounting and CPA Partners - we partner with the best CPA and Accountants to deliver solid results</p>
               <br />
@@ -66,10 +67,8 @@ export default async function ({
               RJ Ewing, Accounting
               <a href="https://www.linkedin.com/in/ewingrj/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <br />
-
-
               </p>
-              <br></br>
+              
               <p>There's $5T+ in small business assets that need to transition in the next decade. There's not enough competent and thorough financial services to cater to the unique needs of each business - be it QoE, Valuation, Accounting or Strategic Finance. We are an intelligence-native CFO service company that helps businesseses and entreprenuers in the acquisition and transition processes. All at the speed of trust. </p>
 
               
